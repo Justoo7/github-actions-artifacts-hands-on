@@ -20,8 +20,8 @@ jobs:
         path: hello.txt
 
   download:
+    needs: build
     runs-on: ubuntu-latest
-
     steps:
     - name: Artifacts files
       uses: actions/upload-artifact@v2
